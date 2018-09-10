@@ -5,18 +5,256 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCS5OSx6MRVaD_ATzLCX1YwthGojQjfR8E'></script>
-    <title>test</title>
+    <title>bananas</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
-
+            <div class="header__top">
+                <div class="header__container container">
+                    <div class="header__grid d-flex">
+                        <a href="#" class="header__logo">
+                            <img src="../img/header__logo.png" alt="Логотип">
+                         </a>
+                        <div class="icons header__icons">
+                            <img src="../img/tagline__icon.png" class="icon__item" alt="">
+                            <img src="../img/runet__icon.png" class="icon__item" alt="">
+                        </div>
+                        <div class="contact-block header__contact-block header__contact-block_icon-phone d-flex">
+                            <a href="tel:+78127704804" class="contact-block__item">+7 (812) 770-48-04</a>
+                            <a href="tel:+74991109547" class="contact-block__item">+7 (499) 110-95-47</a>
+                        </div>
+                        <div class="contact-block header__contact-block header__contact-block_icon-mail">
+                            <a href="mailto:sale@bananaweb.ru" class="contact-block__item">sale@bananaweb.ru</a>
+                        </div>
+                        <a href="#" class="callback header__callback header__callback_icon">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__container  container">
+                    <ul class="header__menu menu menu_style-none d-flex">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Об агенстве</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Продвижение сайтов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Создание сайтов</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контекстная реклама</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Комплексная реклама</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
 <main>
+    <section class="promo">
+        <div class="promo__top" style="background-image: url('img/promo-image__full.jpg');">
+            <div class="container">
+                <div class="breadcrumbs d-flex">
+                    <div class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></div>
+                    <div class="breadcrumbs__item">Продвижение сайтов</div>
+                </div>
+                <div class="promo__grid promo__grid_justify-between promo__grid_mt-40 d-flex">
+                    <h1 class="title promo__title ">
+                    <span class="title__gradient title__gradient_orange">Бесплатное*</span><br>
+                    продвижение сайта <br> 
+                    с гарнтией
+                </h1>
+                    <div class="social">
+                        <a href="#" class="social__item social__item_icon-vk">vk</a>
+                        <a href="#" class="social__item social__item_icon-fb">fb</a>
+                        <a href="#" class="social__item social__item_icon-tw">tw</a>
+                    </div>
+                </div>
+                <div class="pros pros_mt-65 wrap d-flex">
+                    <div class="pros__item d-flex">
+                        <div class="pros__box">
+                            <i class="pros__icon"></i>
+                        </div>
+                        <div class="pros__text">
+                            Вам нужны продажи и заявки с сайта?
+                        </div>
+                    </div>
+                    <div class="pros__item d-flex">
+                        <div class="pros__box">
+                            <i class="pros__icon"></i>
+                        </div>
+                        <div class="pros__text">
+                            Получите заявки на 7-й день
+                        </div>
+                    </div>
+                    <div class="pros__item d-flex">
+                        <div class="pros__box">
+                            <i class="pros__icon"></i>
+                        </div>
+                        <div class="pros__text">
+                            Получите финансовые гарантии
+                        </div>
+                    </div>
+                    <div class="pros__item d-flex">
+                        <div class="pros__box">
+                            <i class="pros__icon"></i>
+                        </div>
+                        <div class="pros__text">
+                            Под вашим 100% контролем
+                        </div>
+                    </div>
+                </div>
+                <form class="promo__form form form_width-small">
+                    <div class="form__title title__gradient title__gradient_orange">Подайте заявку и получите подарок:</div>
+                    <div class="form__inset wrap d-flex">
+                        <div class="form__group">
+                            <label for="#" class="form__label">Введите адрес сайта</label>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="#" class="form__label">Введите свой телефон</label>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__bottom d-flex">
+                            <div class="form__descr">
+                                *Бесплатный месяц при оплате за 6 месяцев начиная с тарифа 35900. Гарантия на вывод сайта в контекстной рекламе и в договоре на вывод сайта в ТОП10.
+                            </div>
+                            <button class="form__button d-flex button button_text-left">
+                                <i class="button__icon button__icon_gift"></i>
+                                <span class="button__text">Получить коммерческое предложение</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="title-def">Получите<br> коммерческое<br> предложение</h2>
+                <form class="promo__form form form_bg-dark form_width-small">
+                    <div class="form__title title__gradient title__gradient_orange">Подайте заявку и получите подарок:</div>
+                    <div class="form__inset wrap d-flex">
+                        <div class="form__group">
+                            <label for="#" class="form__label">Введите адрес сайта</label>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__group">
+                            <label for="#" class="form__label">Введите свой телефон</label>
+                            <input type="text" class="form__input">
+                        </div>
+                        <div class="form__bottom d-flex">
+                            <div class="form__descr">
+                                Нажимая кнопку «Заказать услугу», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+                            </div>
+                            <button class="form__button d-flex button button_text-left">
+                                <i class="button__icon button__icon_gift"></i>
+                                <span class="button__text">Получить коммерческое предложение</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="promo__center">
+        </div>
+        <div class="promo__bottom">
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__col">
+                <h2 class="advantages__title title-def title-def_color-dark">Преимущества работы с нами:</h2>
+                <div class="advantages__items wrap d-flex">
+                    <div class="advantages__item">
+                        <div class="advantages__box">
+                            <i class="advantages__icon"></i>
+                        </div>
+                        <div class="advantages__text">
+                            Опыт работы с 2006 года. Входим в ТОП 20 лидеров рейтинга SEO глазами клиентов!
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__box">
+                            <i class="advantages__icon"></i>
+                        </div>
+                        <div class="advantages__text">
+                            Находимся на 3-м месте в нашей отрасли по "продвижению сайтов СПб"
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item">
+                            <div class="advantages__box">
+                                <i class="advantages__icon"></i>
+                            </div>
+                            <div class="advantages__text">
+                                Даём финансовые гарантии закрепленные в договоре
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item">
+                            <div class="advantages__box">
+                                <i class="advantages__icon"></i>
+                            </div>
+                            <div class="advantages__text">
+                                Комплексный подход и индивидуальные решения под каждый бизнес
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__col">
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
 
