@@ -89,6 +89,35 @@ button {
     cursor: pointer;
 }
 
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+// list
+ul,
+ol {
+    color: rgba(#000, 0.6);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+}
+
+ul li:before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #e6a043;
+    background: linear-gradient(90deg, #e6a043, #e85627);
+    margin-right: 11px;
+}
+
 
 // buttons
 .button {
@@ -96,12 +125,12 @@ button {
     border: none;
     background-color: #e6a043;
     background: linear-gradient(90deg, #e6a043, #e85627);
-    color: #fff;
+    color: #fffeff;
     font-size: 14px;
     border-radius: 16px;
     height: 60px;
     padding: 15px 20px 15px;
-    z-index: 10;
+
 
     &:after {
         content: '';
@@ -110,11 +139,11 @@ button {
         height: inherit;
         left: 0;
         right: 0;
-        background-color: #e6a043;
-        background: linear-gradient(90deg, rgba(230, 160, 67, 0.50), rgba(232, 86, 39, 0.50));
+        background-color: #e6a043; // background: linear-gradient(90deg, rgba(230, 160, 67, 0.50), rgba(232, 86, 39, 0.50));
+        background: linear-gradient(90deg, #73481f, #743417);
         border-radius: 16px;
         z-index: -1;
-        top: 9px;
+        top: 6px;
     }
 
     &_text-left {
@@ -128,10 +157,15 @@ button {
     font-size: 70px;
     line-height: 70px;
     color: #fff;
+    margin-bottom: 20px;
+    font-family: 'EtelkaText';
 
-
-    &_color-dark{
+    &_color-dark {
         color: #2d2d2d;
+    }
+
+    &_color-black {
+        color: #000;
     }
 }
 
@@ -156,6 +190,13 @@ button {
 
     &_style-none {
         list-style: none;
+    }
+
+    &__item {
+
+        &:before {
+            display: none;
+        }
     }
 }
 
@@ -233,7 +274,7 @@ button {
 }
 
 .title {
-    display: inline-block;
+    font-family: 'EtelkaText';
 
     &__gradient {
 
@@ -246,13 +287,15 @@ button {
 }
 
 .promo {
-
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 245px;
     &__top {
-        min-height: 1110px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
+        position: relative;
         padding: 45px 0px 0px;
+        z-index: 10;
     }
 
     &__title {
@@ -260,6 +303,21 @@ button {
         font-size: 70px;
         line-height: 70px;
         letter-spacing: 0px;
+    }
+
+    &__center {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        top: -250px;
+        z-index: 0;
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        right: 0;
     }
 
     &__grid {
@@ -275,6 +333,39 @@ button {
 
     &__form {
         margin-top: 97px;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.pr-center {
+
+    &__title {
+        margin-bottom: 0px;
+    }
+
+
+    &__top {
+        background-image: url(../img/promo-center__top.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 100%;
+    }
+
+    &__middle {
+        position: relative;
+        background-color: #f5f5f5;
+        min-height: 300px;
+    }
+
+    &__bottom {
+        background-image: url(../img/promo-center__bottom.png);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        height: 455px;
+        bottom: 0;
+        width: 100%;
     }
 }
 
@@ -290,7 +381,6 @@ button {
         margin-right: 15px;
         flex: 1 0 auto;
         position: relative;
-        z-index: 10;
 
         &:after {
             content: '';
@@ -298,9 +388,9 @@ button {
             width: inherit;
             height: inherit;
             background-color: #e6a043;
-            background: linear-gradient(90deg, rgba(230, 160, 67, 0.50), rgba(232, 86, 39, 0.50));
+            background: linear-gradient(90deg, #73481f, #743417);
             border-radius: 16px;
-            z-index: 2;
+            z-index: -1;
             top: 5px;
         }
     }
@@ -326,7 +416,7 @@ button {
 
 .form {
     min-height: 290px;
-    background-color: rgba(#000, 0.5);
+    background-color: rgba(#000, 0.7);
     border-radius: 22px;
     padding: 36px 55px 20px 42px;
     position: relative;
@@ -341,6 +431,7 @@ button {
 
     &__title {
         font-size: 22px;
+        font-family: 'EtelkaText';
     }
 
     &__input {
@@ -406,6 +497,7 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    padding: 85px 0px 0px;
 
 
     &__box {
@@ -417,7 +509,8 @@ button {
         margin-right: 15px;
         flex: 1 0 auto;
         position: relative;
-        z-index: 10;
+        margin: 0 auto;
+        box-shadow: -6.729px 1.929px 7px 0px rgba(0, 0, 0, 0.24);
 
         &:after {
             content: '';
@@ -425,23 +518,287 @@ button {
             width: inherit;
             height: inherit;
             background-color: #e6a043;
-            background: linear-gradient(90deg, rgba(230, 160, 67, 0.50), rgba(232, 86, 39, 0.50));
+            background: linear-gradient(90deg, #73481f, #743417);
             border-radius: 24px;
-            z-index: 2;
+            z-index: -1;
             top: 5px;
         }
     }
 
     &__text {
-        color: #fefefe;
-        font-size: 22px;
+        font-size: 16px;
         line-height: 22px;
+        color: #727272;
+        text-align: center;
+        margin: 20px auto 0px;
+        width: 80%;
+        padding: 0px 24px;
+        font-family: 'EtelkaLight';
     }
 
     &__item {
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 50px;
+        flex-direction: column;
+        margin: 0 auto 50px;
         width: 50%;
     }
+
+    &__items {
+        margin-top: 50px;
+    }
+
+    &__col {
+
+        &_pt-large {
+            padding-top: 111px;
+        }
+
+        &_lg-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+.clients {
+    min-height: 500px;
+}
+
+.examples {
+    position: relative;
+    min-height: 1220px;
+    margin-bottom: 100px;
+    padding: 140px 0px 0px;
+    z-index: 12;
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #e85627;
+        background: linear-gradient(90deg, #fc9e39, #e8642c);
+        z-index: -1;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    }
+
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-image: url(../img/examples-back-image.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+        width: 826px;
+        height: 400px;
+        top: 100px;
+    }
+
+    &__grid {
+        justify-content: space-between; // position: absolute;
+        // max-width: 1200px;
+        margin-top: 100px;
+    }
+
+    &__image {
+        width: 100%;
+        &_pos-abs {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__inset {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.4s ease-in;
+    }
+
+    &__text {
+        color: #fff;
+        padding: 24px 20px 24px 28px;
+        width: 100%;
+        font-size: 24px;
+        background: rgba(#000, 0.62);
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 30px;
+        flex: 1 0 auto;
+
+        &_width-100 {
+            flex: 1 100%;
+        }
+
+        &_width-33 {
+            flex: 1 0 33.33%;
+            max-width: calc(33.33% - 19px);
+            height: 220px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 16px 20px 14px 25px;
+
+        &:after {
+            top: 4px;
+        }
+
+        &_pos-absol {
+            position: absolute;
+            right: -20px;
+            bottom: 20px;
+        }
+    }
+}
+
+
+.more-w {
+    margin-top: 133px;
+
+    &__title {
+        font-size: 120px;
+        line-height: normal;
+    }
+}
+
+
+.steps {
+
+    justify-content: space-between;
+
+    &__title {
+        font-size: 24px;
+        color: #000;
+        margin-bottom: 23px;
+    }
+
+    &__item {
+        padding-right: 30px;
+        width: 33.33%;
+    }
+
+    &__text {
+        font-family: 'EtelkaLight';
+        font-size: 17px;
+        color: rgba(#000, 0.6);
+    }
+}
+
+
+.credibility {
+    margin: 143px 0px 0px;
+    position: relative;
+
+    &__title {
+        font-size: 80px;
+        line-height: 80px;
+        justify-content: space-between;
+
+        &_width-medium{
+            width: 72%;
+            margin: 0 auto;
+        }
+
+        &-sub {
+            color: #606060;
+            font-size: 70px;
+            line-height: 70px;
+            text-align: right;
+            flex: 1 1 100%;
+        }
+
+        &-gradient {
+            flex: 2 1 auto;
+        }
+    }
+
+    &__grid {
+        justify-content: space-between;
+    }
+
+    &__col {
+
+        &_right {
+            margin-left: 33.33%;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__image-left{
+        position: absolute;
+        left: 0;
+        top: -100px;
+    }
+}
+
+
+.info {
+    justify-content: space-between;
+    margin-top: 104px;
+    padding: 0px 15px;
+
+    &__item{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        padding: 0px 15px;
+
+
+        &_two{
+            margin-top: 115px;
+        }
+
+        &_three{
+            margin-top: 225px;
+        }
+    }
+
+    &__text{
+        color: rgba(#000, 0.6);
+        width: 80%;
+        font-weight: 400;
+        margin: 24px 0px 0px;
+    }
+
+    &__name {
+        background: -webkit-linear-gradient(left, #e6a043, #e85627);
+        background: -o-linear-gradient(left, #e6a043, #e85627);
+        background: linear-gradient(to right, #e6a043, #e85627);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin: 24px 0px 0px;
+    }
+}
+
+
+
+
+// hover
+.examples__item:hover .examples__inset {
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
 }

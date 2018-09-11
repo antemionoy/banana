@@ -1,14 +1,13 @@
 @font-face {
-    font-family: 'EtelkaLight';
-    src: url('../fonts/EtelkaLight.eot') format('embedded-opentype');
-    font-weight: normal;
+    font-family: EtelkaLight;
+    src: url(../fonts/EtelkaLightPro.eot) format("embedded-opentype"), url(../fonts/EtelkaLightPro.woff) format("woff");
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'EtelkaText';
-    src: url('../fonts/EtelkaText.eot') format('embedded-opentype');
-    font-weight: normal;
+    font-family: EtelkaText;
+    src: url(../fonts/EtelkaTextPro.eot) format("embedded-opentype"), url(../fonts/EtelkaTextPro.woff) format("woff");
+    font-weight: 700;
     font-style: normal;
 }
-
