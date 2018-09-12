@@ -1,5 +1,5 @@
 //= ../../bower_components/jquery/dist/jquery.min.js
-//= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
+//= ../../bower_components/slick-carousel/slick/slick.js
 
 "use strict";
 
@@ -69,45 +69,9 @@ $(function() {
         google.maps.event.addDomListener(window, 'load', init_map);
     }
 
-    $('.image-link').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
+    $('.clients__slider').slick({
+          slidesToShow: 6
     });
-
-    $('.main-carousel').owlCarousel({
-        nav: true,
-        margin: 15,
-        items: 3,
-        dots: false,
-        responsive: {
-            320: {
-                items: 1
-            },
-
-            500: {
-                items: 2
-            },
-
-            768: {
-                items: 3
-            },
-
-            1023: {
-                items: 3
-            },
-            1200: {
-                items: 3
-            },
-
-            1420: {
-                items: 3
-            }
-        }
-    });
-
-    $('[data-remodal-id=modal]').remodal();
 
     $('.js-scrollToEl').on('click', function(e) {
         e.preventDefault();
