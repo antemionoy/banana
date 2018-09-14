@@ -121,6 +121,34 @@ function init_map() {
     });
 }
 
+
+function owlGraphFunction() {
+
+    var logoCarousel = $(".company");
+    var graph = $(".graph img");
+    graph.hide();
+    graph.eq(0).show();
+
+
+    logoCarousel.owlCarousel({
+        items: 1,
+        loop: true,
+        dots: false,
+        nav: true,
+        autoplay: 4000
+    });
+
+    logoCarousel.on("changed.owl.carousel", function(e) {
+        var currentIndex = e.item.index;
+        var currentSlide = $(e.target).find(".owl-item").eq(currentIndex);
+        var pictureDataIndex = currentSlide.find('img').data('index');
+        graph.hide();
+        graph.eq(pictureDataIndex).fadeIn();
+    });
+}
+
+
+
 function menu() {
 
     $(".hamburger").click(function() {
@@ -137,6 +165,7 @@ function menu() {
 $(function() {
     menu();
     zoomPopUp();
+    owlGraphFunction();
 
     owlFun('.reviews__slider', 4, '.reviews__input_range', false);
     owlFun('.achieve__slider', 3, '.achieve__input_range', false);
