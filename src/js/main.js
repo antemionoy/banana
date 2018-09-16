@@ -62,8 +62,6 @@ function owlFun(sliderName, items, rangeItem, auto_width) {
         $('.irs-slider.single').css('width', dragLength + "%");
     });
 
-
-    //Слайдер
     owl.owlCarousel({
         loop: false,
         margin: 30,
@@ -75,52 +73,7 @@ function owlFun(sliderName, items, rangeItem, auto_width) {
         center: false,
         responsiveClass: true
     });
-
-    console.log('sliderItem');
-
-
-    // owl.on('dragged.owl.carousel', function(event) {
-    //     var itemCount = event.item.count;
-    //     var size = event.page.size;
-    //     var curItem = event.item.index + 1;
-    //     var dragLength = 100 / (itemCount / size);
-    //     console.log(curItem);
-    //     $("#range").data("ionRangeSlider").update({ from: curItem });
-    //     $('.irs-slider.single').css('width', dragLength + "%");
-    // });
-
-    // owl.on('resized.owl.carousel', function(event) {
-    //     var itemCount = event.item.count;
-    //     var size = event.page.size;
-    //     var curItem = event.item.index + 1;
-    //     var dragLength = 100 / (itemCount / size);
-    //     $("#range").data("ionRangeSlider").update({
-    //         max: itemCount - (size - 1),
-    //         from: curItem
-    //     });
-    //     $('.irs-slider.single').css('width', dragLength + "%");
-    // });
 }
-
-function init_map() {
-    var myOptions = {
-        zoom: 13,
-        scrollwheel: false,
-        // draggable: false,
-        center: new google.maps.LatLng(60.159938, 30.552295),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-
-    iconSrc = window.location.origin = '/img/marker.png';
-
-    ms0 = new google.maps.Marker({
-        position: new google.maps.LatLng(60.159938, 30.552295),
-        map: map,
-        icon: 'img/marker.png'
-    });
-}
-
 
 function owlGraphFunction() {
 
@@ -170,20 +123,14 @@ $(function() {
     owlFun('.reviews__slider', 4, '.reviews__input_range', false);
     owlFun('.achieve__slider', 3, '.achieve__input_range', false);
 
-    if (typeof(google) != 'undefined') {
-        google.maps.event.addDomListener(window, 'load', init_map);
-    }
 
     $('.clients__slider').slick({
         slidesToShow: 6,
         autoplay: true,
-        autoplaySpeed: 1500
+        autoplaySpeed: 1500,
+        arrow: true
     });
 
-    // $('.clients__slider').owlCarousel({
-    //     items: 6,
-    //     autoplay: true
-    //  });
 
     $('.js-scrollToEl').on('click', function(e) {
         e.preventDefault();
