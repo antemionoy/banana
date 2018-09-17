@@ -137,15 +137,12 @@ function owlGraphFunction() {
 
 
 function menu() {
+    $(".hamburger").click(function(e) {
+        e.preventDefault();
 
-    $(".hamburger").click(function() {
         $(this).toggleClass("is-active");
-        $(this).closest('header').find('.header__bottom').toggleClass('header__bottom--active');
-    });
-
-    $('.menu__link').click(function() {
-        $('.header__bottom').removeClass('header__bottom--active');
-        $('.hamburger').toggleClass("is-active");
+        $('body').toggleClass('open-menu');
+        $('.header__bottom').toggleClass('header__bottom_open');
     });
 }
 
@@ -165,24 +162,22 @@ $(function() {
         autoplaySpeed: 1500,
         arrow: true,
         responsive: [{
-                breakpoint: 1023,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: false,
-                    dots: false
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: false,
-                    dots: false
-                }
+            breakpoint: 1023,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: false,
+                dots: false
             }
-        ]
+        }, {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: false
+            }
+        }]
 
     });
 
