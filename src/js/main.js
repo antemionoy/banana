@@ -8,8 +8,8 @@
 "use strict";
 
 
-function zoomPopUp() {
-    $('.zoom-gallery').magnificPopup({
+function zoomPopUp(item) {
+    $(item).magnificPopup({
         delegate: 'a',
         type: 'image',
         closeOnContentClick: false,
@@ -71,7 +71,25 @@ function owlFun(sliderName, items, rangeItem, auto_width) {
         items: items,
         autoWidth: auto_width,
         center: false,
-        responsiveClass: true
+        responsiveClass: true,
+        responsive: {
+
+            320: {
+                items: 1
+            },
+
+            480: {
+                items: 1
+            },
+
+            768: {
+                items: 3
+            },
+
+            1023: {
+                items: 4
+            }
+        }
     });
 }
 
@@ -85,10 +103,26 @@ function owlGraphFunction() {
 
     logoCarousel.owlCarousel({
         items: 1,
-        loop: true,
+        loop: false,
         dots: false,
         nav: true,
-        autoplay: 4000
+        responsive: {
+            320: {
+                items: 1
+            },
+
+            480: {
+                items: 1
+            },
+
+            768: {
+                items: 1
+            },
+
+            1023: {
+                items: 1
+            }
+        }
     });
 
     logoCarousel.on("changed.owl.carousel", function(e) {
@@ -117,7 +151,8 @@ function menu() {
 
 $(function() {
     menu();
-    zoomPopUp();
+    zoomPopUp('.zoom-gallery');
+    zoomPopUp('.achieve-gallery');
     owlGraphFunction();
 
     owlFun('.reviews__slider', 4, '.reviews__input_range', false);
@@ -128,7 +163,27 @@ $(function() {
         slidesToShow: 6,
         autoplay: true,
         autoplaySpeed: 1500,
-        arrow: true
+        arrow: true,
+        responsive: [{
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: false,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: false,
+                    dots: false
+                }
+            }
+        ]
+
     });
 
 
