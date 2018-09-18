@@ -31,8 +31,6 @@
 @import "partials/mixin";
 @import "partials/fonts";
 @import "partials/magnific";
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -58,7 +56,7 @@ body {
     overflow-x: hidden;
 }
 
-p{
+p {
     margin: 0px 0px 10px;
 }
 
@@ -151,7 +149,6 @@ ul li:before {
     margin-right: 11px;
 }
 
-
 // buttons
 .button {
     position: relative;
@@ -163,17 +160,13 @@ ul li:before {
     border-radius: 30px; // height: 60px;
     padding: 15px 20px 15px;
     transition: all 0.3s ease;
-
-
     &:hover {
         transition: all 0.3s ease;
         background: linear-gradient(90deg, #e85627, #e6a043);
     }
-
     &:hover:after {
         opacity: 0;
     }
-
     &:after {
         content: '';
         position: absolute;
@@ -188,7 +181,6 @@ ul li:before {
         top: 4px;
         transition: all 0.3s ease;
     }
-
     &_text-left {
         text-align: left;
     }
@@ -201,7 +193,6 @@ ul li:before {
 }
 
 .button__icon_gift {
-
     &:after {
         content: '';
         display: inline-block;
@@ -215,7 +206,6 @@ ul li:before {
 }
 
 .button__icon_line-chart {
-
     &:after {
         content: '';
         display: inline-block;
@@ -237,20 +227,14 @@ ul li:before {
     font-family: 'EtelkaText';
     position: relative;
     z-index: 700;
-
     &_color-dark {
         color: #2d2d2d;
     }
-
     &_color-black {
         color: #000;
     }
-
-
-
     &_arrow {
         display: inline-block;
-
         &:before {
             content: '';
             position: absolute;
@@ -271,19 +255,16 @@ ul li:before {
     flex-direction: row;
     align-items: center;
     position: relative;
-
     &__inner {
         flex-direction: column;
         margin-left: 18px;
     }
-
     &__item {
         color: #fff;
         font-size: 18px;
         line-height: normal;
         font-weight: 400;
     }
-
     &_icon {
         background: linear-gradient(90deg, #e6a043, #e85627);
         top: 50%;
@@ -294,16 +275,13 @@ ul li:before {
         display: flex;
         align-items: center;
         justify-content: center;
-
         &-width-medium {
             width: 49px;
             height: 49px;
             background: linear-gradient(0deg, #e85627, #e6a043);
         }
     }
-
     &_icon-phone {
-
         &:before {
             content: '';
             position: absolute;
@@ -314,9 +292,7 @@ ul li:before {
             background-position: center center;
         }
     }
-
     &_icon-mail {
-
         &:before {
             content: '';
             width: 15px;
@@ -326,9 +302,7 @@ ul li:before {
             background-position: center center;
         }
     }
-
     &_icon-callback {
-
         &:before {
             content: '';
             width: 25px;
@@ -340,28 +314,22 @@ ul li:before {
     }
 }
 
-
 .callback {
     color: #fff;
 }
 
 .menu {
-
     &__link {
         color: #737373;
-
         &_active {
             color: #fff;
         }
     }
-
     &_style-none {
         list-style: none;
     }
-
     &__item {
         text-transform: uppercase;
-
         &:before {
             display: none;
         }
@@ -370,7 +338,6 @@ ul li:before {
 
 .social {
     align-items: flex-start;
-
     &__link {
         width: 45px;
         height: 45px;
@@ -387,12 +354,10 @@ ul li:before {
         position: relative;
         z-index: 2;
         transition: all 0.3s ease;
-
         &:hover {
             background: linear-gradient(90deg, #e6a043, #e8642c);
             transition: background 0.3s ease;
         }
-
         &_icon:before {
             content: '';
             position: absolute;
@@ -401,25 +366,21 @@ ul li:before {
             background-repeat: no-repeat;
             background-position: center center;
         }
-
         &_icon-vk:before {
             background-image: url(../img/vk-social-network-logo.png);
             width: 24px;
             height: 14px;
         }
-
         &_icon-fb:before {
             background-image: url(../img/facebook-icon.png);
             width: 14px;
             height: 24px;
         }
-
         &_icon-tw:before {
             background-image: url(../img/twitter-logo-silhouette.png);
             width: 24px;
             height: 20px;
         }
-
         &_gradient-orange:after {
             content: '';
             position: absolute;
@@ -441,35 +402,29 @@ ul li:before {
         background-position: center center;
         background-size: cover;
     }
-
     &__callback {
         border-bottom: 1px dashed #fff;
         font-size: 16px;
     }
-
     &__bottom {
         height: 30px;
         background-color: rgba(#323232, 0.6);
         position: relative;
         z-index: 100;
     }
-
     &__grid {
         height: inherit;
         align-items: center;
         justify-content: space-between;
         padding: 10px 0px;
     }
-
     &__container {
         height: inherit;
     }
-
     &__contact-block {
         color: #fff;
         margin-right: 10px;
     }
-
     &__menu {
         flex-direction: row;
         justify-content: space-between;
@@ -477,48 +432,38 @@ ul li:before {
         font-size: 13px;
         height: inherit;
     }
-
-    &__left{
+    &__left {
         position: relative;
     }
-
     &__icons {
         padding-right: 93px;
         padding-left: 20px;
-
     }
-
-    &__mobile{
+    &__mobile {
         display: none;
     }
 }
-
 
 .breadcrumbs {
     font-size: 13px;
     line-height: normal;
     font-weight: 400;
     text-transform: uppercase;
-
     &_mt-45 {
         margin-top: 45px;
     }
-
     &__item {
         color: #aaaaaa;
         margin-right: 10px;
-
         &:after {
             content: '🡒';
             width: 10px;
             height: 2px;
         }
-
         &:last-child:after {
             display: none;
         }
     }
-
     &__link {
         color: #5e5e5e;
         padding-right: 10px;
@@ -527,9 +472,7 @@ ul li:before {
 
 .title {
     font-family: 'EtelkaText';
-
     &__gradient {
-
         &_orange {
             background: linear-gradient(90deg, #e6a043, #e8642c);
             -webkit-background-clip: text;
@@ -547,15 +490,11 @@ ul li:before {
     display: flex;
     flex-direction: column;
     margin-top: -30px;
-
     &__social {
-
-
         &-link {
             margin-left: 18px;
         }
     }
-
     &__top {
         position: relative;
         padding: 85px 0px 0px; // z-index: 11;
@@ -564,14 +503,12 @@ ul li:before {
         background-size: cover;
         background-position: center center;
     }
-
     &__title {
         color: #fefefe;
         font-size: 70px;
         line-height: 70px;
         letter-spacing: 0px;
     }
-
     &__center {
         position: absolute; // height: 100%;
         width: 100%;
@@ -579,7 +516,6 @@ ul li:before {
         margin-top: 760px;
         z-index: 11;
     }
-
     &__bottom {
         padding-top: 40%;
         position: relative; // bottom: -80px;
@@ -589,24 +525,19 @@ ul li:before {
         background-size: cover;
         background-position: center bottom;
     }
-
     &__grid {
         align-items: flex-start;
-
         &_justify-between {
             justify-content: space-between;
         }
-
         &_mt-40 {
             margin-top: 45px;
         }
     }
-
     &__form {
         margin-top: 56px;
         position: relative;
         z-index: 11;
-
         &_bottom {
             position: relative;
             bottom: -80px;
@@ -630,23 +561,19 @@ ul li:before {
     height: 1180px;
     padding-top: 25%;
     padding-bottom: 50%;
-
     &__title {
         font-size: 120px;
         line-height: 100px;
     }
-
     &__range {
         margin-top: 40px;
         display: flex;
         padding-left: 84px;
     }
-
     &__slider {
         min-height: 300px;
         padding-top: 55px;
     }
-
     &__item {
         min-height: 255px;
         border-radius: 15px;
@@ -655,15 +582,12 @@ ul li:before {
         position: relative;
         display: block;
     }
-
     &__image {
         position: absolute;
         top: -20px;
         left: 50%;
         transform: translateX(-50%);
     }
-
-
     &:before {
         content: '';
         background-color: #f5f5f5;
@@ -671,7 +595,6 @@ ul li:before {
         position: absolute;
         left: -100%;
     }
-
     &:after {
         content: '';
         background-color: #f5f5f5;
@@ -679,8 +602,6 @@ ul li:before {
         position: absolute;
         right: -100%;
     }
-
-
     &__top {
         // background-image: url(../img/promo-center__top.png);
         background-position: top center;
@@ -688,13 +609,11 @@ ul li:before {
         width: 100%;
         position: relative;
     }
-
     &__middle {
         position: relative; // background-color: #f5f5f5;
         // height: 500px;
         padding-top: 62px;
     }
-
     &__bottom {
         // background-image: url(../img/promo-center__bottom.png);
         background-position: bottom center;
@@ -705,11 +624,8 @@ ul li:before {
     }
 }
 
-
 .pros {
     width: 740px;
-
-
     &__icon {
         width: 32px;
         height: 32px;
@@ -718,8 +634,6 @@ ul li:before {
         position: relative;
         z-index: 10;
     }
-
-
     &__box {
         max-width: 60px;
         width: 60px;
@@ -731,7 +645,6 @@ ul li:before {
         display: flex;
         align-items: center;
         justify-content: center;
-
         &:before {
             content: '';
             position: absolute;
@@ -742,8 +655,6 @@ ul li:before {
             border-radius: inherit;
             z-index: 2;
         }
-
-
         &:after {
             content: '';
             position: absolute;
@@ -756,7 +667,6 @@ ul li:before {
             top: 5px;
         }
     }
-
     &__text {
         color: #fefefe;
         font-size: 22px;
@@ -764,7 +674,6 @@ ul li:before {
         font-family: 'EtelkaLight';
         width: 70%;
     }
-
     &__item {
         flex-direction: row;
         align-items: center;
@@ -772,8 +681,6 @@ ul li:before {
         width: 340px;
         margin-right: 30px;
     }
-
-
     &_mt-65 {
         margin-top: 65px;
     }
@@ -786,9 +693,7 @@ ul li:before {
     padding: 36px 55px 20px 42px;
     position: relative;
     z-index: 500;
-
     &_border {
-
         &:before {
             content: '';
             position: absolute;
@@ -800,22 +705,16 @@ ul li:before {
             left: -18px;
         }
     }
-
-
-
     &_bg-dark {
         background: linear-gradient(90deg, #2e2e2e, #000000);
     }
-
     &_width-small {
         width: 612px;
     }
-
     &__title {
         font-size: 22px;
         font-family: 'EtelkaText';
     }
-
     &__input {
         background: transparent;
         border: none;
@@ -823,12 +722,10 @@ ul li:before {
         outline: #3d3d3d;
         color: #fff;
     }
-
     &__inset {
         margin: 25px 0px 0px;
         justify-content: space-between;
     }
-
     &__group {
         position: relative;
         width: 167px;
@@ -838,13 +735,11 @@ ul li:before {
             margin-left: 60px;
         }
     }
-
     &__input {
         width: 100%;
         font-size: 15px;
         height: 50px;
     }
-
     &__label {
         position: absolute;
         left: -25px;
@@ -853,9 +748,7 @@ ul li:before {
         font-size: 15px;
         transition: all .3s;
         z-index: -1;
-
         &_icon-planet {
-
             &:after {
                 content: '';
                 position: absolute;
@@ -868,9 +761,7 @@ ul li:before {
                 top: -10px;
             }
         }
-
         &_icon-telephone {
-
             &:after {
                 content: '';
                 position: absolute;
@@ -884,14 +775,12 @@ ul li:before {
             }
         }
     }
-
     &__bottom {
         margin-top: 25px;
         width: 100%;
         position: relative;
         align-items: center;
     }
-
     &__descr {
         letter-spacing: -.025em;
         font-style: italic;
@@ -899,7 +788,6 @@ ul li:before {
         color: #3f3f3f;
         width: 335px;
     }
-
     &__button {
         position: absolute;
         right: -90px;
@@ -908,7 +796,6 @@ ul li:before {
         align-items: center;
     }
 }
-
 
 .form__input:focus~.form__label,
 .form__input:not(:focus):valid~.form__label {
@@ -927,8 +814,6 @@ ul li:before {
     right: -30px;
 }
 
-
-
 .advantages {
     background-image: url(../img/advantages-bg.png);
     background-repeat: no-repeat;
@@ -936,18 +821,15 @@ ul li:before {
     background-position: top center;
     padding: 85px 0px 44px;
     position: relative;
-
     &__title {
         margin-bottom: 80px;
     }
-
     &__icon {
         width: 55px;
         height: 64px;
         background-size: 100%;
         background-position: center center;
     }
-
     &:before {
         content: '';
         position: absolute;
@@ -960,8 +842,6 @@ ul li:before {
         background: linear-gradient(0deg, #f7f7f7, #fff);
         z-index: -1;
     }
-
-
     &__box {
         width: 130px;
         height: 130px;
@@ -976,7 +856,6 @@ ul li:before {
         display: flex;
         align-items: center;
         justify-content: center;
-
         &:after {
             content: '';
             position: absolute;
@@ -989,7 +868,6 @@ ul li:before {
             top: 5px;
         }
     }
-
     &__text {
         font-size: 16px;
         line-height: 22px;
@@ -1000,26 +878,21 @@ ul li:before {
         padding: 0px 15px;
         font-family: 'EtelkaLight';
     }
-
     &__item {
         flex-direction: column;
         margin: 0 0 50px;
         width: 38%;
         margin-right: 12%;
     }
-
     &__items {
         margin-top: 50px;
     }
-
     &__col {
         position: relative;
         z-index: 10;
-
         &_pt-large {
             padding-top: 111px;
         }
-
         &_lg-6 {
             flex: 0 0 50%;
             max-width: 50%;
@@ -1031,13 +904,11 @@ ul li:before {
     margin-top: 84px;
     min-height: 200px;
     padding-bottom: 66px;
-
     &__slider {
         align-items: center;
         position: relative;
         padding: 47px 0px 30px;
     }
-
     &__item {
         margin: auto;
         display: flex !important;
@@ -1062,7 +933,6 @@ ul li:before {
     z-index: 999;
 }
 
-
 .clients__slider .slick-prev:before {
     top: 50%;
     right: 10px;
@@ -1072,7 +942,6 @@ ul li:before {
     top: 50%;
     left: 10px;
 }
-
 
 .slick-prev:before {
     content: '';
@@ -1084,7 +953,6 @@ ul li:before {
     width: 50px;
     height: 50px;
 }
-
 
 .slick-next:before {
     content: '';
@@ -1103,8 +971,6 @@ ul li:before {
     margin-bottom: 100px;
     padding: 140px 0px 0px;
     z-index: 12;
-
-
     &:before {
         content: '';
         position: absolute;
@@ -1119,8 +985,6 @@ ul li:before {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
     }
-
-
     &:after {
         content: '';
         position: absolute;
@@ -1132,13 +996,11 @@ ul li:before {
         height: 400px;
         top: 100px;
     }
-
     &__grid {
         justify-content: space-between; // position: absolute;
         // max-width: 1200px;
         margin-top: 100px;
     }
-
     &__image {
         width: 100%;
         &_pos-abs {
@@ -1149,7 +1011,6 @@ ul li:before {
             left: 0;
         }
     }
-
     &__inset {
         position: relative;
         z-index: 10;
@@ -1160,7 +1021,6 @@ ul li:before {
         opacity: 0;
         transition: opacity 0.4s ease-in;
     }
-
     &__text {
         color: #fff;
         padding: 24px 20px 24px 28px;
@@ -1168,34 +1028,28 @@ ul li:before {
         font-size: 24px;
         background: rgba(#000, 0.62);
     }
-
     &__item {
         position: relative;
         margin-bottom: 30px;
         flex: 1 0 auto;
-
         &_width-100 {
             flex: 1 100%;
         }
-
         &_width-33 {
             flex: 1 0 33.33%;
             max-width: calc(33.33% - 19px);
             height: 220px;
         }
     }
-
     &__button {
         display: flex;
         align-items: center;
         height: 52px;
         padding: 16px 20px 14px 25px;
         font-size: 16px;
-
         &:after {
             top: 4px;
         }
-
         &_pos-absol {
             position: absolute;
             right: -20px;
@@ -1204,9 +1058,7 @@ ul li:before {
     }
 }
 
-
 .button__icon_mouse {
-
     &:after {
         content: '';
         display: inline-block;
@@ -1219,52 +1071,42 @@ ul li:before {
     }
 }
 
-
 .more-w {
     margin-top: 183px;
-
     &__title {
         font-size: 120px;
         line-height: normal;
     }
-
     &__bottom {
         margin-top: 22px;
     }
-
     &__top {
         margin-top: 66px;
     }
 }
 
-
 .company {
     overflow: hidden;
     position: relative;
     padding-left: 94px;
-
     &__logo {
         margin-right: 30px;
     }
-
     &__item {
         align-items: center;
         width: 500px;
     }
-
     &__text {
         font-family: 'EtelkaText';
         font-size: 16px;
         margin-top: 11px;
     }
-
     &__title {
         position: relative;
         font-family: 'EtelkaText';
         font-size: 24px;
         padding-bottom: 15px;
         color: #000;
-
         &:before {
             content: '';
             position: absolute;
@@ -1292,20 +1134,16 @@ ul li:before {
 }
 
 .steps {
-
     justify-content: space-between;
-
     &__title {
         font-size: 24px;
         color: #000;
         margin-bottom: 23px;
     }
-
     &__item {
         padding-right: 30px;
         width: 33.33%;
     }
-
     &__text {
         font-family: 'EtelkaLight';
         font-size: 17px;
@@ -1313,23 +1151,18 @@ ul li:before {
     }
 }
 
-
 .credibility {
     margin: 111px 0px 0px;
     position: relative;
-
     &__title {
         font-size: 80px;
         line-height: 80px;
         justify-content: space-between;
         max-width: 100%;
         padding: 0px 15px;
-
-
         &_second {
             margin-top: 130px;
             position: relative;
-
             &:after {
                 content: '';
                 position: absolute;
@@ -1341,14 +1174,11 @@ ul li:before {
                 height: 150px;
             }
         }
-
         &_width-medium {
             width: 800px;
             margin: 0 auto;
         }
-
         &_pic-line {
-
             &:before {
                 content: '';
                 position: absolute;
@@ -1362,7 +1192,6 @@ ul li:before {
                 right: 0;
             }
         }
-
         &-sub {
             color: #606060;
             font-size: 70px;
@@ -1370,43 +1199,35 @@ ul li:before {
             text-align: right;
             flex: 1 1 100%;
         }
-
         &-gradient {
             flex: 2 1 auto;
         }
     }
-
     &__grid {
         justify-content: space-between;
     }
-
     &__text {
         font-size: 17px;
         line-height: 24px;
         font-family: 'EtelkaLight';
         margin-top: 14px;
     }
-
     &__col {
         position: relative;
-
         &_right {
             margin-left: 33.33%;
             flex-direction: column;
             align-items: flex-start;
         }
     }
-
     &__image-left {
         position: absolute; // margin-left: -177px;
         left: 0;
         top: 0;
     }
-
     &__lk {
         margin-top: 80px;
     }
-
     &:after {
         content: '';
         position: absolute;
@@ -1424,12 +1245,10 @@ ul li:before {
     }
 }
 
-
 .info {
     justify-content: space-between;
     margin-top: 104px;
     padding: 0px 15px;
-
     &__item {
         flex-direction: column;
         align-items: center;
@@ -1437,7 +1256,6 @@ ul li:before {
         text-align: center;
         padding: 0px 15px;
         position: relative;
-
         &:after {
             content: '';
             position: absolute;
@@ -1448,17 +1266,11 @@ ul li:before {
             width: 169px;
             height: 65px;
         }
-
-
-
         &_two {
             margin-top: 115px;
         }
-
         &_three {
             margin-top: 225px;
-
-
             &:after {
                 transform: rotate(57deg);
                 top: 221px;
@@ -1466,14 +1278,12 @@ ul li:before {
             }
         }
     }
-
     &__text {
         color: rgba(#000, 0.6);
         width: 90%;
         font-weight: 400;
         margin: 24px 0px 0px;
     }
-
     &__name {
         background: -webkit-linear-gradient(left, #e6a043, #e85627);
         background: -o-linear-gradient(left, #e6a043, #e85627);
@@ -1491,19 +1301,15 @@ ul li:before {
 }
 
 .lk {
-
-
     &__grid {
         justify-content: space-between;
     }
-
     &__bottom {
         margin-top: 30px;
         width: 100%;
         align-items: center;
         justify-content: flex-end;
     }
-
     &__pass {
         border-radius: 20px;
         background-color: #f3f3f3;
@@ -1514,14 +1320,11 @@ ul li:before {
         position: relative;
         z-index: -1;
     }
-
     &__name {
         margin-right: 6px;
         display: flex;
         align-items: center;
         color: #8b8b8b;
-
-
         &:after {
             content: '';
             width: 10px;
@@ -1531,14 +1334,11 @@ ul li:before {
             margin-left: 6px;
         }
     }
-
     &__val {
         text-transform: uppercase;
         margin-left: 3px;
         font-weight: 700;
     }
-
-
     &__button {
         height: 55px;
         display: flex;
@@ -1547,16 +1347,12 @@ ul li:before {
     }
 }
 
-
-
-
 .lk__name:last-child:after {
     display: none;
 }
 
 .included {
     margin-top: 140px;
-
     &__name {
         background: -webkit-linear-gradient(left, #e6a043, #e85627);
         background: -o-linear-gradient(left, #e6a043, #e85627);
@@ -1569,38 +1365,31 @@ ul li:before {
         margin: 24px 0px 0px;
         font-family: 'EtelkaText';
     }
-
     &__text {
         font-size: 17px;
         line-height: 25px;
         margin-top: 8px;
         font-family: 'EtelkaText';
     }
-
     &__grid {
         justify-content: space-between;
         margin-top: 120px;
     }
-
     &__col {
         position: relative;
         flex-direction: column;
         justify-content: space-between;
         min-height: 340px;
-
         &_text-right {
             text-align: right;
         }
-
         &_padding-around {
             padding: 0px 15px;
         }
     }
-
     &__item {
         position: relative;
         padding: 0px 15px;
-
         &:after {
             content: '';
             width: 43px;
@@ -1610,32 +1399,26 @@ ul li:before {
             top: 60%;
             animation: whithes 3.5s infinite alternate;
         }
-
         &_left-top:after {
             transform: rotate(213deg);
             right: -40px;
         }
-
         &_left-bottom:after {
             transform: rotate(-213deg);
             right: -40px;
         }
-
         &_right-top:after {
             transform: rotate(146deg);
             left: -40px;
         }
-
         &_right-bottom:after {
             transform: rotate(-146deg);
             left: -40px;
         }
     }
-
     &__title {
         text-align: center;
     }
-
     &__image {
         position: absolute;
         top: 50%;
@@ -1643,14 +1426,11 @@ ul li:before {
         right: 0;
         transform: translate(-50%, -50%);
     }
-
     &__col {
-
         &_lg-4 {
             width: 33.33%;
         }
     }
-
     &__circle {
         display: flex;
         align-items: center;
@@ -1660,12 +1440,10 @@ ul li:before {
     }
 }
 
-
-@keyframes whithes{
+@keyframes whithes {
     from {
         width: 42px;
     }
-
     to {
         width: 22px;
     }
@@ -1675,12 +1453,10 @@ ul li:before {
     from {
         transform: scale(1);
     }
-
     to {
         transform: scale(1.1);
     }
 }
-
 
 .feedback-block {
     padding: 208px 0px 155px;
@@ -1689,29 +1465,23 @@ ul li:before {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-
     &__form {
         margin-top: 70px;
     }
 }
 
-
-
 .reviews {
     background-color: #f9f9f9;
     padding: 156px 0px 152px;
-
     &__flame {
         position: relative;
     }
-
     &__range {
         position: relative;
         margin-top: 30px;
     }
     &__item {
         width: 270px;
-
         &:before {
             content: '';
             position: absolute;
@@ -1722,7 +1492,6 @@ ul li:before {
             transform: scale(0.8);
             transition: all 0.2s ease-in;
         }
-
         &:after {
             content: '';
             position: absolute;
@@ -1736,7 +1505,6 @@ ul li:before {
             opacity: 0;
         }
     }
-
     &__image {
         width: 270px;
         max-width: 100%;
@@ -1778,8 +1546,7 @@ ul li:before {
     margin-top: 95px;
 }
 
-
-.owl-dots{
+.owl-dots {
     text-align: center;
     margin-top: 30px;
     position: static;
@@ -1787,17 +1554,14 @@ ul li:before {
     left: 50%;
     transform: translateX(-50%);
     bottom: -60px;
-
-
-    .owl-dot{
+    .owl-dot {
         background-color: #e6a043;
         width: 13px;
-        height:13px;
+        height: 13px;
         border: none;
         border-radius: 50%;
         margin: 0px 4px;
-
-        &.active{
+        &.active {
             border: 1px solid #e6a043;
             background-color: #fff;
         }
@@ -1808,11 +1572,9 @@ ul li:before {
     position: absolute;
     font-size: 0;
     border: none;
-
     span {
         display: none;
     }
-
     button {
         border: none;
     }
@@ -1838,7 +1600,6 @@ ul li:before {
     width: 50px;
     height: 50px;
 }
-
 
 .owl-next:before {
     content: '';
@@ -1878,39 +1639,31 @@ ul li:before {
     left: 10px;
 }
 
-
 .footer {
     padding: 176px 0px 127px;
     background-image: url(../img/footer-bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-
     &__grid {
         justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap;
     }
-
-    &__col{
+    &__col {
         margin-bottom: 20px;
     }
-
     &__list-block {
         margin-right: 82px;
     }
-
     &__list {
         padding-right: 45px;
     }
-
     &__contact-block {
         margin-bottom: 23px;
     }
-
     &__social {
         margin-top: 20px;
-
         &-link {
             margin-right: 18px;
         }
@@ -1918,45 +1671,35 @@ ul li:before {
 }
 
 .list {
-
-
     &__item {
         list-style: none;
         font-size: 15px;
         margin-bottom: 12px;
-
         &:before {
             display: none;
         }
     }
-
     &__link {
         color: #d2d2d2;
-
         &:hover {
             text-decoration: underline;
         }
     }
 }
 
-.graph{
-
-
-    &__image{
+.graph {
+    &__image {
         max-width: 100%;
     }
 }
 
-
 .list-block {
-
     &__title {
         font-family: 'EtelkaText';
         font-size: 30px;
         color: #858585;
         margin-bottom: 25px;
     }
-
     &__grid {
         justify-content: space-between;
     }
@@ -1967,7 +1710,6 @@ ul li:before {
     opacity: 1;
     transition: opacity 0.4s ease-in;
 }
-
 
 .reviews__item:hover:before {
     opacity: 1;
@@ -1981,12 +1723,10 @@ ul li:before {
     transition: all 0.3s ease-in;
 }
 
-
 .menu__link:hover,
 .menu__link:focus {
     color: #fff;
 }
-
 
 .contact-block__item:hover,
 .contact-block__item:focus {
@@ -2047,7 +1787,42 @@ ul li:before {
     background-image: url(../img/icon-alarm.png);
 }
 
+// about
+.pros {
+    &_width-100 {
+        width: 100%;
+    }
+}
+
+.about-promo .promo__top {
+    height: auto;
+}
+
+.about-promo {
+    min-height: 782px;
+    height: auto;
+}
+
+.promo {
+    &__inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.actuality{
+    min-height: 1070px;
+    background-image: url(../img/actuality__image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.title-def {
+    &_color-white {
+        color: #fff;
+    }
+}
 
 @import "media";
-
-
