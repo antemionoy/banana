@@ -280,7 +280,7 @@
         }
     }
     .achieve {
-        &__title{
+        &__title {
             font-size: 60px;
             line-height: 60px;
         }
@@ -441,7 +441,7 @@
         }
     }
     .achieve {
-                &__title{
+        &__title {
             font-size: 46px;
             line-height: 46px;
         }
@@ -626,6 +626,63 @@
     }
     .reviews__range {
         display: none;
+    } // about
+    .promo {
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .pros__item_margin-right{
+        margin-right: 0;
+    }
+
+    .about{
+        padding-top: 40px;
+    }
+    .action__name{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .about__col{
+        margin-bottom: 40px;
+    }
+    .about__col_width-50{
+        width: 100%;
+    }
+    .action-bonus{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .promo__description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .about-promo__pros{
+        padding: 0px 15px;
+    }
+
+    .actuality{
+        padding-top: 50px;
+    }
+
+    .actuality__center_image-polygon{
+        height: auto;
+        background: transparent;
+    }
+
+    .polygon-b{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .polygon-b__text{
+        position: static;
+        transform: translate(0);
+        margin: 0 auto 30px;
     }
 }
 
